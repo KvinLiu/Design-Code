@@ -1,0 +1,31 @@
+{
+  "name": "browser-sync-jekyll",
+  "version": "0.0.0",
+  "description": "A website project for myself",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Liu",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "",
+    "gulp": "",
+    "gulp-autoprefixer": "",
+    "gulp-pug": "",
+    "gulp-sass": ""
+  },
+  "repository": {
+
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "bugs": {
+
+  },
+  "homepage": ""
+}
