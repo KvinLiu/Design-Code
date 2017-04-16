@@ -694,6 +694,91 @@ section.youtube {
         section.youtube .col-1:last-child {
           padding: 0 20px 50px; } }
 
+section.mentoring {
+  background-image: url(/assets/img/mentoring-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow: hidden; }
+  section.mentoring .col-1 {
+    width: 300px; }
+    section.mentoring .col-1.center {
+      padding-top: 240px; }
+    @media (max-width: 640px) {
+      section.mentoring .col-1 {
+        width: 100%; }
+        section.mentoring .col-1.center {
+          padding-top: 5px; } }
+  section.mentoring .home-cta {
+    color: #2cb4db; }
+  section.mentoring .faces {
+    list-style: none;
+    margin: -50px 0;
+    padding: 0;
+    height: -webkit-calc(100% + 100px);
+    height: calc(100% + 100px);
+    position: relative;
+    top: 800px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    section.mentoring .faces.launched {
+      top: 0px; }
+  section.mentoring .face {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 35px;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    cursor: pointer; }
+  section.mentoring .bubble {
+    opacity: 0;
+    position: absolute;
+    left: 100%;
+    margin-left: 10px;
+    bottom: 60%;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    -webkit-border-radius: 40px 40px 40px 5px;
+            border-radius: 40px 40px 40px 5px;
+    border: 2px solid #fff;
+    point-events: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left; }
+  section.mentoring .face.has-bubble-open .bubble {
+    opacity: 1;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); }
+
+@media (max-width: 640px) {
+  section.mentoring .trick {
+    height: 345px; }
+  section.mentoring .faces {
+    margin: 0;
+    width: 690px;
+    top: 230px;
+    left: 0; }
+  section.mentoring .face {
+    display: inline-block;
+    margin-right: 35px; }
+  section.mentoring .bubble {
+    bottom: 100px;
+    margin-bottom: 10px;
+    margin-left: 0; } }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -768,3 +853,9 @@ section.youtube {
     @media (max-width: 640px) {
       .home-lead.outdent {
         text-indent: 0; } }
+
+@media (max-width: 640px) {
+  .home-lead {
+    text-align: center; }
+    .home-lead.outdent {
+      text-indent: 0; } }
